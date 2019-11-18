@@ -9,7 +9,7 @@ int main() {
     scanf("%d", &n);
     int *arr = (int*)malloc(n * sizeof(int));
     
-    int i=0, sum=0;
+    int i=0, sum=0;     // Initializing variables
     while(i<n)
     {
         scanf("%d",&arr[i]);
