@@ -5,15 +5,18 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-int search(const in a[], int n, int key)
+int search(const int a[], int n, int key)
 {
-    int i =0;
+    int i=0;
     while(1)
     {
-        if(i==n)
+        if(i==n){
             return -1;
-        if(a[i]==key)
+        }
+            
+        if(a[i]==key){
             return i;
+        }
         i++;
     }
 }
@@ -39,7 +42,7 @@ int main(void)
         puts("검색에 실패했습니다.");
     else
     {
-        printf("%d(은)는 ㅌ[%d]에 있습니다.\n". ky, idx);
+        printf("%d(은)는 x[%d]에 있습니다.\n", ky, idx);
     }
     free(x);
 
